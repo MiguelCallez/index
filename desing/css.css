@@ -64,7 +64,7 @@ li{
 	font-size: 18px;
 	font-family: sans-serif;
 }
-.textoper{
+p{
 	font-size: 18px;
 	font-family: sans-serif;
 }
@@ -146,23 +146,25 @@ li{
 	width: 100%;
 	background-color: rgba(17, 15, 15, 0.5);
 	background-size: contain;
-	padding: 60px;
-   
+	padding-bottom: 60px;
+	padding-left: 10px;
+	justify-content: center;
+  }
+.caja3{
+	float: right;
+	display: flex;
+	justify-content: left;
+	width: 65%;
+	height: 100%;
+	background-color: rgba(17, 15, 15, 0.5);
+	padding-bottom: 60px;
+	padding-left: 10px;
+	background-size: contain;
   }
 .caja4{
 	display: flex;
-	
 	width: 100%;
 	background-size: contain;
-}
-.caja3{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  background-color: rgba(17, 15, 15, 0.5);
-  background-size: contain;
-
- 
 }
 .logos{
   width: 90%;
@@ -188,19 +190,24 @@ li{
 	max-width: 50%;
 	top: 10px;
 }
+.col4{
+	flex: 0 0 60%;
+	max-width: 85%;
+	top: 10px;
+}
 .col1,.col2{
 	position: relative;
-	width:90%;
+	width:80%;
 	min-height: 10px;
 	padding-right: 40px;
-	padding-left: 75px;
+	padding-left: 55px;
 }
-.col3{
+.col3,.col4{
 	position: relative;
-	width:90%;
+	width:100%;
 	min-height: 20px;
-	padding-right: 40px;
-	padding-left: 120px;
+	padding-right: 30px;
+	padding-left: 110px;
 }
 .bienvenida {
 	font-size: 10px;
@@ -480,5 +487,168 @@ li{
 	border-radius: 10px;
 	font-size: 40px;
 	justify-content: center;
+	width: 90%;
 	
 }
+ .columna{
+	width: 35%;
+	height: 100%;
+	background: #111111;
+	background-size: contain;
+	display: inline-block;
+	border-radius: 10px;
+	padding-bottom: 60px;
+}
+.contacto{
+	color: #ffffff;
+}
+
+
+.menu1 nav{
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	z-index: 1000;
+	background: #929292;
+	border-radius: 10px;
+	
+	}
+	.menu1 nav ul{
+		list-style: none;
+	
+	}
+	.menu1 nav ul li{
+	   display: inline-block;
+	   position: relative;
+	
+	
+	}
+	.menu1 nav ul li a{
+	
+		padding: 20px;
+		color:white;
+		text-decoration: none;
+		display: block;
+	}
+	.menu1 nav ul li:hover{
+	
+		background: #fff;
+		border-radius: 10px;
+	}
+	.menu1 nav ul li a:hover{
+	
+		color:  black;
+	}
+	.menu1 nav ul li span{
+	
+		margin-right: 10px;
+	
+	}
+	.menu1 nav ul li:hover .children{
+		display: block;
+	}
+	
+	
+	.menu1 nav ul li .children{
+	
+		display:none;
+		background: #929292;
+		position:absolute;
+		width: 100%;
+		z-index: 1000;
+	}
+	.menu1 nav ul li .children li{
+		 display: block;
+		 overflow: hidden;
+		 border-bottom: 1px solid rgba(255,255,255,.5);
+	}
+	.menu1 nav ul li .children li a{
+	
+		display: block;
+	
+	}
+	.menu1 nav ul li .chldren li a span{
+		float: right;
+		position: relative;
+		top: 3px;
+		margin-right: 0;
+		margin-left: 10px;
+	
+	
+	
+	}
+	.cursor{
+		position: relative;
+		top: 3px;
+		margin-right: 0;
+		margin-left: 10px;
+	
+	
+	}
+	/*espacio para programar el respnsive*/
+	@media screen and (max-width: 300px){
+		body{
+			padding-top: 70px;
+	
+		}
+		.menu_bar{
+	
+			display: block;
+			background: #929292;
+			position: fixed;
+			top: 0;
+			width: 100%;
+	
+		}
+		.menu_bar .bt-menu{
+			display: block;
+			padding:15px;
+			background: #023859;
+			color: #fff;
+			overflow: hidden;
+			text-decoration: none;
+			font-size:  30;
+			font-weight: bolder;
+			-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	
+		}
+		.menu_bar span{
+			float: right;
+			font-size: 40px;
+	
+		}
+		.menu1 nav{
+			height: calc(100%-70px);
+			right: 100%;
+			position: fixed;
+			width: 80%;
+			overflow: scroll;
+			margin: 0;
+			border-radius: 0;
+	
+	
+		}
+		.menu1 nav ul li{
+			display: block;
+			border-bottom: 1px solid rgba(225,225,225,.5)
+		}
+		.menu1 nav ul li a{
+			display: block;
+	
+		}
+		.menu1 nav ul li .children{
+			width: 100%;
+			position: relative;
+	
+		}
+		.menu1 nav ul li .children li a{
+			margin-left: 10px;
+	
+		}
+		.cursor{
+			float: right;
+		}
+	
+	}
